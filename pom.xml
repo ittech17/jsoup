@@ -33,6 +33,12 @@
 
   <build>
     <plugins>
+    <plugin>
+    	<groupId>org.pitest</groupId>
+    	<artifactId>pitest-maven</artifactId>
+    	<version>1.4.7</version>
+    	 <configuration><features><value>+EXPORT</value></features> </configuration>
+ 	</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
